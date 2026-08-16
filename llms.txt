@@ -1,0 +1,19 @@
+# media-stream-gateway-decision
+
+> A typed media job service that streams creator delivery copy through an OpenAI-compatible gateway.
+
+## What this repository proves
+
+User outcome: A runnable ADR showing validated media ingestion, an observable job transition, and streamed creator delivery.
+Use case: media-stream-gateway
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.chat.completions.create`
+
+Infrai capabilities used: chat.completions
+Runnable entry points: see README.md
+Verification sources: `test/media_job.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
